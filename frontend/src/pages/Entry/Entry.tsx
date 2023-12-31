@@ -24,7 +24,7 @@ const ScrollingText = () => {
               clearInterval(newIntervalId);
             }
           }, 70);
-        }, 9000); // 10-second delay
+        }, 9000);
       }
     }, 70);
 
