@@ -1,4 +1,3 @@
-import React from 'react';
 import TwitterSVG from '../../assets/twitter.svg';
 import LinkedInPNG from '../../assets/linkedin.png';
 import GitHubPNG from '../../assets/github.png';

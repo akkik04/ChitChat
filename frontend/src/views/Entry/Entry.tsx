@@ -1,4 +1,3 @@
-import React from 'react';
 import EntryPage from '../../pages/Entry/Entry';
 
 const EntryView = () => {
