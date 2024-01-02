@@ -33,11 +33,11 @@ const ScrollingText = () => {
   }, [textToScroll]);
 
   return (
-    <div className="flex flex-col items-center h-screen text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-      <div className="mb-4">{displayedText}</div>
+    <div className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl bg-gray-100">
+      <div className="mb-8">{displayedText}</div>
       <Link to="/try-now">
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Try Now
+        <button className="mt-4 bg-gray-300 hover:bg-gray-100 text-xl md:text-2xl lg:text-3xl text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg">
+          Test it out!
         </button>
       </Link>
     </div>
@@ -46,7 +46,7 @@ const ScrollingText = () => {
 
 const EntryPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="relative">
       <div className="mt-16">
         <Routes>
           <Route path="/" element={<ScrollingText />} />
