@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import process from 'process';
 import axios, { AxiosResponse } from 'axios';
 
 interface FileUploadResponse {
