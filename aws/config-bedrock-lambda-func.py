@@ -31,7 +31,7 @@ def summarize_bedrock(content: str) -> str:
     B_INST, E_INST = "[INST]", "[/INST]"
     
     # creating the prompt for llama 2.
-    instruction = B_INST + "Summarize the meeting notes that will follow:" + E_INST
+    instruction = B_INST + "Summarize the meeting notes that will follow below into a few paragraphs...highlighting the key aspects of the meeting notes:" + E_INST
     prompt_text = instruction + "\n{}".format(content)
     body = {
         "prompt":prompt_text,
