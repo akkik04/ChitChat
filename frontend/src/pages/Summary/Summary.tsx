@@ -22,18 +22,19 @@ const FileUploadPage = () => {
     }
   };
 
+  const animateLoadingText = () => {
+    setTimeout(() => {
+      setLoadingText((prevText) => (prevText.length < 5 ? prevText + '.' : ''));
+      if (loading) {
+        requestAnimationFrame(animateLoadingText);
+      }
+    }, 500); // Adjust the delay (in milliseconds) based on your preference
+  };
+
   useEffect(() => {
-    let intervalId: string | number | NodeJS.Timeout | undefined;
-
     if (loading) {
-      intervalId = setInterval(() => {
-        setLoadingText((prevText) => (prevText.length < 5 ? prevText + '.' : ''));
-      }, 500);
+      requestAnimationFrame(animateLoadingText);
     }
-
-    return () => {
-      clearInterval(intervalId);
-    };
   }, [loading]);
 
   return (
@@ -41,7 +42,7 @@ const FileUploadPage = () => {
       <h1 className="text-4xl font-bold mb-2">File Upload Page</h1>
 
       <p className="text-lg mb-8 text-center">
-        Choose a your .txt meeting notes file and hit the upload button!
+        Choose your .txt meeting notes file and hit the upload button!
       </p>
 
       <div className="w-full max-w-md">
@@ -71,15 +72,14 @@ const FileUploadPage = () => {
 
       {summary !== null && (
         <div className="mt-8 text-center border border-black p-4">
-          {loading ? (
-            '...'
-          ) : (
+          {loading ? '...' : (
             <div className="bg-white p-4 border-2 border-black font-bold">
               {summary}
             </div>
           )}
         </div>
       )}
+
       <Footer />
     </div>
   );
