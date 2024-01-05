@@ -34,3 +34,7 @@ To use the application, simply head over to the [website](https://chit-chat-cyan
 I've created a short demo video to showcase the application in action! You can view it below:
 
 https://github.com/akkik04/ChitChat/assets/81925146/9dafdea9-1454-47f9-a3a7-59cfc98ff2b7
+
+## Next Steps 🚀
+
+ChitChat is fully functional and ready to be used! However, I want to continue tinkering with different types of LLMs (mainly looking into what Anthropic AI is offering via AWS BedRock) and fine-tune them to provide a more robust and accurate summary. I also want to explore the possibility of integrating ChitChat with a voice-to-text API, to allow for a more seamless experience.
