@@ -50,6 +50,7 @@ const EntryPage = () => {
       <div className="mt-16">
         <Routes>
           <Route path="/" element={<ScrollingText />} />
+          <Route path="/try-now" element={<ScrollingText />} />
         </Routes>
       </div>
       <Footer />
