@@ -33,3 +33,4 @@ To use the application, simply head over to the [website](https://chit-chat-cyan
 
 I've created a short demo video to showcase the application in action! You can view it below:
 
+https://github.com/akkik04/ChitChat/assets/81925146/9dafdea9-1454-47f9-a3a7-59cfc98ff2b7
